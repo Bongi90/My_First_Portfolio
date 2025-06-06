@@ -1,93 +1,136 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"> <!-- Changed to utf-8 as per requirement -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Index</title>
+    <!-- Title with full name and tagline -->
+    <title>Abongile Abbey Valashiya - Personal Portfolio</title>
 </head>
 <body>
     <header>
-        <!-- The header must contain an unordered list of links to each of your webpages -->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tweets.html">Tweets</a></li>
-        </ul>
+        <!-- Header with h1 and tagline -->
+        <h1>Abongile Abbey Valashiya</h1>
+        <p>Frontend Developer | Creating Engaging Web Experiences</p>
     </header>
 
-    <main>
-        <!-- The main tag must contain two direct sub-tags in that order: <article> and <aside> -->
-        <article>
-            <!-- This article contains the original content of your index.html webpage -->
-            <h1>Welcome to My Portfolio</h1>
+    <nav>
+        <!-- Navigation Bar with links to sections -->
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-            <p>Hello! I'm Abongile Abbey Valashiya, an enthusiastic and dedicated Frontend Developer with a passion for crafting engaging, dynamic, and user-centric web experiences. My journey into web development is driven by a desire to bring ideas to life through code and to build intuitive interfaces that delight users.</p>
+    <section id="introduction">
+        <!-- Introduction Section -->
+        <h2>Introduction</h2>
+        <p>Hello! I'm Abongile Abbey Valashiya, an enthusiastic and dedicated Frontend Developer with a passion for crafting engaging, dynamic, and user-centric web experiences. My journey into web development is driven by a desire to bring ideas to life through code and to build intuitive interfaces that delight users.</p>
+        <p>My goal is to continually sharpen my technical skills and contribute meaningfully to dynamic teams that are shaping the future of technology. I believe in continuous learning and applying best practices to every line of code I write.</p>
+    </section>
 
-            <h2>About My Journey</h2>
-            <p>My path to frontend development is unique, shaped by a diverse background that has honed a powerful blend of technical aptitude and critical soft skills. Currently, I am deepening my technical grounding through intensive studies in both frontend and backend development with ALX, equipping me with comprehensive knowledge of modern web technologies.</p>
+    <section id="projects">
+        <!-- Projects Section -->
+        <h2>Projects</h2>
 
-            <h3>Key Projects & Experience</h3>
-            <p>I have worked on various projects, ranging from foundational Python scripts for logical operations to complex web applications using modern frameworks. My professional history includes a role as an Advanced AI Data Trainer at Invisible Technologies, which cultivated a proactive mindset and a keen eye for detail.</p>
-            <p>This experience, combined with my extensive tenure as an Administration Clerk at TB HIV CARE NPO, has honed my organizational abilities and meticulous attention to detail, proving my capacity to manage multiple deadlines and work effectively in remote settings.</p>
-
-            <a href="https://www.alxafrica.com" target="_blank">
-                <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" style="width:200px; height:auto; display:block; margin: 20px auto;">
-            </a>
-
-            <h3>What Drives Me</h3>
-            <p>I thrive on turning complex problems into elegant and efficient solutions. My passion lies in developing high-quality, reusable frontend components, optimizing user interfaces, and collaborating with cross-functional teams to bring innovative features from concept to reality. I am always eager to learn new technologies and contribute meaningfully to dynamic teams.</p>
-
-            <!-- Additional paragraphs as required -->
-            <p>My goal is to continually sharpen my technical skills and contribute meaningfully to dynamic teams that are shaping the future of technology. I believe in continuous learning and applying best practices to every line of code I write.</p>
-
-            <p>Thank you for visiting my page!</p>
-
-            <!-- The link to tweets.html was moved into the header for navigation consistency -->
-            <!-- <p><a href="tweets.html">Check out my tweets!</a></p> -->
-
-            <h2>Our Learners</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>25</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>Emily</td>
-                        <td>28</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Michael</td>
-                        <td>32</td>
-                        <td>Australia</td>
-                    </tr>
-                    <tr>
-                        <td>Sophia</td>
-                        <td>21</td>
-                        <td>UK</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Project 1: Portfolio Homepage (from previous content) -->
+        <article class="project">
+            <h3>My Portfolio Homepage (HTML & Basic Structure)</h3>
+            <p>This project involved setting up the foundational HTML structure for my personal portfolio. It features semantic HTML5 elements like header, main, footer, and a navigation bar. It also showcases basic content integration, including paragraphs, headings, and a clickable image.</p>
+            <p>I focused on ensuring validity with the HTML Validator and establishing a consistent structure across pages.</p>
+            <a href="index.html" target="_blank">View Project</a>
+            <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" style="width:100px; height:auto; display:block; margin-top: 10px;">
         </article>
 
-        <aside>
-            <!-- The aside tag must contain a single paragraph -->
-            <p>placeholder to add comment thread later</p>
-        </aside>
-    </main>
+        <!-- Project 2: Tweets Page (from previous content) -->
+        <article class="project">
+            <h3>Tweets Page (Embedding External Content)</h3>
+            <p>This project focused on extending the portfolio with a dedicated page for embedded tweets. It demonstrates the ability to integrate external content seamlessly into an HTML document, while maintaining the consistent site-wide structure (header, main, footer, navigation) established in the homepage.</p>
+            <a href="tweets.html" target="_blank">View Project</a>
+        </article>
+
+        <!-- Project 3: UK Tax Calculator (React) - Example from previous work -->
+        <article class="project">
+            <h3>UK Tax Calculator (React.js)</h3>
+            <p>A dynamic React.js component designed to calculate UK income tax for 2023/2024 based on annual income. This project highlights proficiency in React state management, functional components, and implementing complex calculation logic. Crucially, it incorporates result caching using `useMemo` for performance optimization.</p>
+            <a href="#" target="_blank">View Code (Conceptual)</a> <!-- Link to a code repo if available -->
+        </article>
+
+        <!-- Displaying Learners Table from previous index.html -->
+        <h3>Our Learners (Data Table Example)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Emily</td>
+                    <td>28</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>32</td>
+                    <td>Australia</td>
+                </tr>
+                <tr>
+                    <td>Sophia</td>
+                    <td>21</td>
+                    <td>UK</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="about">
+        <!-- About Me Section (Content from portfolio_about_me) -->
+        <h2>About Me</h2>
+        <p>My path to frontend development is unique, shaped by a diverse background that has honed a powerful blend of technical aptitude and critical soft skills. Currently, I am deepening my technical grounding through intensive studies in both frontend and backend development with ALX, equipping me with comprehensive knowledge of modern web technologies.</p>
+
+        <p>My recent role as an Advanced AI Data Trainer at Invisible Technologies instilled in me a highly proactive mindset and a meticulous eye for detail – qualities that are indispensable for troubleshooting, ensuring code quality, and optimizing user experiences. Working in a collaborative team environment, I consistently focused on identifying improvements and proposing effective solutions, directly translating to my approach in development.</p>
+
+        <p>Prior to this, my extensive experience as an Administration Clerk at TB HIV CARE NPO developed my strong organizational abilities, exceptional attention to detail, and a proven capacity to manage diverse responsibilities and deadlines with autonomy. These experiences have made me highly adept at working effectively in remote settings and managing workflows with precision.</p>
+
+        <h3>My Expertise:</h3>
+        <ul>
+            <li>**Languages:** HTML, CSS, JavaScript (ES6+)</li>
+            <li>**Frameworks:** React, Angular (Strong experience in building robust SPAs)</li>
+            <li>**Styling:** Responsive Design, Mobile-First Development, Cross-Browser Compatibility</li>
+            <li>**Tools & Methodologies:** Version Control (Git), Problem-Solving, Attention to Detail, Agile Methodologies (Scrum, Kanban familiarity)</li>
+            <li>**Communication:** Excellent written and verbal communication, fluent English.</li>
+        </ul>
+
+        <h3>What Drives Me:</h3>
+        <p>I thrive on turning complex problems into elegant and efficient solutions. My passion lies in developing high-quality, reusable frontend components, optimizing user interfaces, and collaborating with cross-functional teams to bring innovative features from concept to reality. I am always eager to learn new technologies, embrace industry best practices, and contribute to projects that are at the forefront of digital innovation. My goal is to continually sharpen my technical skills and contribute meaningfully to dynamic teams that are shaping the future of technology.</p>
+    </section>
+
+    <section id="contact">
+        <!-- Contact Section -->
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or connect on social media:</p>
+        <ul>
+            <li>Email: <a href="mailto:avalashiya90@gmail.com">avalashiya90@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/abongile-valashiya" target="_blank">linkedin.com/in/abongile-valashiya</a></li>
+            <li>GitHub: <a href="https://github.com/Bongi90" target="_blank">github.com/Bongi90</a></li> <!-- Using Bongi90 based on previous commit -->
+        </ul>
+        <p>You can also reach me at: +27763959754</p>
+    </section>
 
     <footer>
-        <!-- The footer tag must contain one paragraph on a single line -->
-        <p>Made by Abongile Abbey Valashiya - <a href="https://www.linkedin.com/in/abongile-valashiya" target="_blank">here</a>.</p>
+        <!-- Footer with copyright information -->
+        <p>&copy; 2024 Abongile Abbey Valashiya</p>
     </footer>
 </body>
 </html>
+
 
